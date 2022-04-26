@@ -14,7 +14,7 @@ figure {
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: rgb(245, 245, 245);
     font-family: Avenir, sans-serif;
     font-weight: medium;
     line-height: 140%;
@@ -55,7 +55,7 @@ header {
 }
 
 h1 {
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     font-size: 2.3rem;
     padding: 2rem 3rem 0.5rem 1.5rem;
     font-weight: bold;
@@ -94,7 +94,7 @@ footer {
 }
 
 p {
-    color: whitesmoke;
+    color: rgb(245, 245, 245);
     padding: 1.5rem;
 }
 
