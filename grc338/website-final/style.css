@@ -134,6 +134,7 @@ figure.home {
 figure.portrait {
     max-width: 70em;
     padding-top: 2em;
+    margin-right: 3em;
 }
 
 figure.products {
@@ -144,6 +145,7 @@ figure.products {
 figure.location {
     max-width: 70em;
     padding-top: 2em;
+    margin-right: 3em;
 }
 
 @media screen and (min-width: 60em) {
