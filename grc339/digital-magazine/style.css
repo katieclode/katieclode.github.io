@@ -1,0 +1,112 @@
+/*CSS document*/
+
+body {
+    background-color: #e5e5e6;
+    margin: 0em;
+}
+
+div.container {
+    max-width: 40em;
+    margin: auto;
+    font-family: ibm-plex-sans, sans-serif;
+    line-height: 170%;
+}
+
+header {
+    background-color: #150404;
+    padding: .01em 1em;
+    margin-bottom: 1em;
+}
+
+h1 {
+    max-width: 10em;
+}
+
+h2 {
+    color: #B70320;
+    text-transform: uppercase;
+    font-family: degular, sans-serif;
+}
+
+h3 {
+    font-family: degular, sans-serif;
+    text-transform: uppercase;
+    margin: 0em 0em .4em;
+}
+
+main {
+    padding: 0em 1em;
+}
+
+figure {
+    margin: 0em 0em .5em;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #e5e5e6;
+}
+
+nav ul li a:hover {
+    color: #B70320;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1em;
+    font-family: degular, sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #150404;
+}
+
+main section a:hover {
+    color: #B70320;
+}
+
+section {
+    padding-bottom: 2em;
+}
+
+section p {
+    margin: 0em 0em 1em;
+}
+
+article {
+    margin-bottom: 3em;
+    padding: 0em 1em;
+}
+
+aside {
+    margin: 0em 1em;
+    border-top: 2px solid #150404;
+    padding-top: 2em;
+}
+
+figcaption {
+    font-family: ibm-plex-sans, sans-serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: .9em;
+}
+
+footer {
+    background-color: #150404;
+    padding: .01em 1em;
+}
+
+footer p {
+    color: #e5e5e6;
+}
