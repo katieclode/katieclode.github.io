@@ -24,6 +24,7 @@ h2 {
     color: #B70320;
     text-transform: uppercase;
     font-family: degular, sans-serif;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -37,6 +38,7 @@ p {
     font-family: ibm-plex-sans, sans-serif;
     font-size: .9em;
     line-height: 150%;
+    margin-top: 0;
 }
 
 main {
@@ -84,25 +86,23 @@ main section a:hover {
 }
 
 section {
-    padding: 0 0em 2em 0;
+    padding: 0 0 2em 0;
+}
+
+div.page {
+    max-width: 70em;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 article {
-    margin-bottom: 3em;
-    padding: 0em 1em;
+    flex: 2 1 25em;
+    margin: 0 1em 3em 2em;
 }
 
 aside {
+    flex: 1 1 15em;
     margin: 0em 1em;
-    border-top: 2px solid #150404;
-    padding-top: 2em;
-}
-
-figcaption {
-    font-family: ibm-plex-sans, sans-serif;
-    font-style: italic;
-    font-weight: 200;
-    font-size: .9em;
 }
 
 footer {
@@ -122,8 +122,16 @@ footer p {
         margin: auto;
     }
 
+    div.page {
+        margin: auto;
+    }
+
     section {
         padding: 0;
+    }
+
+    section.page {
+        padding-bottom: 2em;
     }
 
     section.mainstory {
@@ -136,7 +144,7 @@ footer p {
         flex-direction: column;
     }
     
-    section.mainstory a figure div{
+    section.mainstory a figure div {
         flex: 1 0 18em;
         background-image: url(city_lights.jpg);
         background-repeat: no-repeat;
