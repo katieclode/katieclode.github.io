@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Final</title>
+        <link rel="stylesheet" href="https://use.typekit.net/pfc6iag.css">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <div class="container">
+            <h2>Color Analysis</h2>
+            <!-- navigation for tabs -->
+            <nav>
+                <ul>
+                    <li class="current nav" data-tab="1"><a href="#">What is it?</a></li>
+                    <li class="nav" data-tab="2"><a href="#">Quiz</a></li>
+                    <li class="nav" data-tab="3"><a href="#">Results</a></li>
+                </ul>
+            </nav>
+            
+            <div id="1" class="current">
+                <!-- Article explaining what Color Analysis is -->
+                <h3>What is Color Analysis?</h3>
+
+                <article class="firstPage">
+                    <section class="article">
+                        <p>Have you ever noticed that certain clothing colours make you look tired and washed out, while others instantly make you look stunning? You haven't just imagine this; there is a reason why this happens. And it has to do with colour theory.</p>
+                        <p>Selecting the wrong colours for your clothes can leave you looking ill or off. If you want to have a wardrobe that makes you feel great, it's paramount to find the colours that will flatter you the most. And colour analysis is a great tool to help you find them.</p>
+                        <p>Color analysis, also known as personal color analysis (PCA), seasonal color analysis, or skin-tone matching, is a term often used within the cosmetics and fashion industry to describe a method of determining the colors of clothing and makeup that harmonize with a person's skin complexion, eye color, and hair color for use in wardrobe planning and style consulting. It is generally agreed that the wrong colors will draw attention to such flaws as wrinkles or uneven skin tone while harmonious colors will enhance the natural beauty of the individual making them appear healthy and fresh-faced.</p>
+                        <p class="list">To color analyze yourself, you must evaluate your:</p>
+                        <ul class="article">
+                            <li>Skintone</li>
+                            <li>Hair color</li>
+                            <li>Eye color</li>
+                        </ul>
+                        <p>Your skin tone, hair color, and eye color will fall into one of four main seasonal categories: winter, spring, summer, and autumn. The base families are named after seasons because each season has an established color association with it already.  For instance, we think of oranges and red for autumn, icy white and pale blue for winter, lush green for spring, and light, airy colors for summer.  </p>
+                        <p>This is not a new concept and goes back to impressionist painters who had to accurately represent a seasonal landscape by the tones, hues, and shades they used.  But the concept of seasonal color in regards to your own hair, skin, and eyes was popularized by Carole Jackson’s book “Color Me Beautiful” in the 1980s.</p>
+                    </section>
+
+                    <section class="images">
+                        <img src="images/spring.png" alt="Spring color palette">
+                        <img src="images/summer.png" alt="Summer color palette">
+                        <img src="images/autumn.png" alt="Autumn color palette">
+                        <img src="images/winter.png" alt="Winter color palette">
+                    </section>
+                </article> 
+            </div>
+
+            <div id="2">
+                <form>
+                    <section class="eyes">
+                        <!-- eye color choice drop down -->
+                        <h3>Eyes</h3>
+                        <h4>What is your eye color?</h4>
+                        <select name="eyes" id="eyes">
+                            <option disabled selected value> -- select an eye color -- </option>
+                            <option data-temp="cool" value="blue">Blue</option>
+                            <option data-temp="cool" value="grey">Grey</option>
+                            <option data-temp="warm" value="green">Green</option>
+                            <option data-temp="warm" value="hazel">Hazel</option>
+                            <option data-temp="cool" value="coolBrown">Cool Brown</option>
+                            <option data-temp="warm" value="warmBrown">Chocolate/Golden Brown</option>
+                            <option data-temp="cool" value="black">Black</option>
+                        </select>
+                    </section>
+
+                    <section class="skin">
+                        <!-- skin color choices radio buttons -->
+                        <h3>Skin</h3>
+                        <h4>Select what best describes your skin tone:</h4>
+                        <ul>
+                            <li><input type="radio" id="tone_0" value="cool" name="tone" /> <label for="cool">Cool</label></li>
+                            <li><input type="radio" id="tone_2" value="warm" name="tone" /> <label for="warm">Warm</label></li>
+                        </ul>
+                    </section>
+                    
+                    <section class="hair">
+                        <!-- hair color choice drop down -->
+                        <h3>Hair</h3>
+                        <h4>Select what best describes your natural hair color:</h4>
+                        <select name="hair" id="hair">
+                            <option disabled selected value> -- select a hair color -- </option>
+                            <option data-temp="warm" value="warmBlonde">Warm/Golden Blonde</option>
+                            <option data-temp="cool" value="coolBlonde">Cool/Ashy Blonde</option>
+                            <option data-temp="warm" value="warmLight">Light Golden Brown</option>
+                            <option data-temp="cool" value="coolLight">Light Ashy Brown</option>
+                            <option data-temp="warm" value="warmMedium">Medium Warm Brown</option>
+                            <option data-temp="cool" value="coolMedium">Medium Ashy Brown</option>
+                            <option data-temp="warm" value="warmDark">Deep Chocolate Brown</option>
+                            <option data-temp="cool" value="coolDark">Cool Dark Brown/Black</option>
+                            <option data-temp="warm" value="ginger">Auburn/Ginger</option>
+                            <option data-temp="warm" value="strawberry">Strawberry Blonde</option>
+                        </select>
+                    </section>
+                    <!-- sumbission button -->
+                    <input type="button" class="button" value="Submit" id="submit">
+                </form>
+                <p id="output"></p>
+            </div>
+
+            <div id="3">
+                <!-- Conclusion to article -->
+                <h3>How to Use Your Color Analysis Results</h3>
+                <article>
+                    <p>Your results can help you find colors that flatter you the most, whether it's clothing, makeup, or nail polish. However, don't let your results stop you from choosing colors you like just because they aren't in your color palette. These palettes are only a rule of thumb to help you explore your color options and find colors that pop on you.</p>
+                    <p>Once you find your season, you can start finding your best color palette:</p>
+                    <ul class="article">
+                        <li>Winters look best in jewel-tones, blues, and vibrant pinks.</li>
+                        <li>Summers look best in muted colors, cool pastels, and purples.</li>
+                        <li>Springs look best in bright colors, greens, and warm pastels.</li>
+                        <li>Autumns look best in earth-tones, rich oranges, and greens.</li>
+                    </ul>
+                </article>
+
+                <section class="gallery">
+                    <img src="images/clear-winter.png" alt="Clear winter color palette">
+                    <img src="images/cool-winter.png" alt="Cool winter color palette">
+                    <img src="images/deep-winter.png" alt="Deep winter color palette">
+                    <img src="images/soft-summer.png" alt="Soft summer color palette">
+                    <img src="images/cool-summer.png" alt="Cool summer color palette">
+                    <img src="images/light-summer.png" alt="Light summer color palette">
+                    <img src="images/clear-spring.png" alt="Clear spring color palette">
+                    <img src="images/warm-spring.png" alt="Warm spring color palette">
+                    <img src="images/light-spring.png" alt="Light spring color palette">
+                    <img src="images/soft-autumn.png" alt="Soft autumn color palette">
+                    <img src="images/warm-autumn.png" alt="Warm autumn color palette">
+                    <img src="images/deep-autumn.png" alt="Deep autumn color palette">
+                </section>
+                
+                <p>Now that you are a color expert, help your friends find their own color palette that will make them feel glowing and confident!</p>
+            </div>
+        </div>
+        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>
