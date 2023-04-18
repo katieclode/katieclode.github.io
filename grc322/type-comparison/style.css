@@ -1,0 +1,34 @@
+p, ul li{
+    font-family: scotch-display, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.differences{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+h1, h3{
+    font-family: scotch-display, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h2, h4, h5{
+    font-family: scotch-display, sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container{
+    margin: auto;
+    padding: 3rem;
+    max-width: 40rem;
+}
+
+img{
+    width: 100%;
+}
+
