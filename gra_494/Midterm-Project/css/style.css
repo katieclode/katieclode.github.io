@@ -292,9 +292,189 @@ div.artist {
 	flex: 1 0 12em;
 }
 
+.sub-section {
+    background-color: #000000;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+
 /* Breakpoint */
 @media screen and (max-width: 700px) {
 	section.main {
 		margin: 5rem 2rem;
 	}
+}
+
+/* Style Guide */
+
+button {
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+    line-height: 1.2;
+}
+
+.button--header {
+    margin: 10px 15px;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+}
+
+.button--subscribe {
+    margin: auto 0;
+	padding: 3px 6px;
+    font-size: 10px;
+	text-transform: uppercase;
+    border: 1px solid #ffffff;
+	border-radius: 5px;
+	
+}
+
+input {
+	margin: 0 1em 0 0;
+	padding: 0 0 7px;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	font-size: 10px;
+	outline: none;
+	user-select: auto;
+	width: 242px;
+	position: relative;
+	z-index: 0;
+	border-bottom: 1px solid #ffffff;
+	color: #ffffff;
+}
+
+::placeholder {
+	color: #ffffff;
+	opacity: 1; /* Firefox */
+}
+  
+::-ms-input-placeholder { /* Edge 12 -18 */
+	color: #ffffff;
+}
+
+.heading {
+    font-family: sans-serif;
+    font-style: normal;
+    text-rendering: optimizeLegibility;
+    visibility: inherit;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1;
+    padding: 22px 0;
+    max-width: 8.75em;
+    display: flex;
+    flex: 1;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.button--arrow {
+    border-radius: 10px;
+    position: relative;
+    border: transparent;
+    background-color: transparent;
+    padding: 22px 0;
+    margin: 0;
+    filter: invert(1);
+}
+
+.button--arrow-left {
+    margin: 0 8px 0 0;
+    background: url("https://www.rcarecords.com/wp-content/themes/rca-v2/static/svg/arrow-left.svg?f9d50f46a5b54d4e28bfa4dc4d6a74d4") center no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+
+.button--arrow-right {
+    background: url("https://www.rcarecords.com/wp-content/themes/rca-v2/static/svg/arrow-right.svg?a2f39d6848de4fc6d95b43cdc1d74afe") center no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+
+.link {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 350ms ease;
+    padding: 0;
+    margin: 0;
+}
+
+.link--menu {
+    text-transform: uppercase;
+    font-size: 75px;
+    font-weight: 400;
+    overflow: hidden;
+    width: 50%;
+	flex: 1 0 4em;
+    line-height: 1;
+    text-align: center;
+    margin: 0 auto;
+    text-rendering: optimizeLegibility;
+}
+
+.subheading {
+    list-style-type: none!important;
+    margin: 0;
+    padding: 0;
+    margin-top: 8px;
+    font-weight: 400;
+    line-height: 1.2;
+    font-size: 12px;
+}
+
+span.single {
+	color: #848b95;
+	text-transform: uppercase;
+	margin: 0 .5em 0 0;
+}
+
+.link--single {
+	margin: 0 0 1em;
+    flex: 1 0 4em;
+}
+
+div.menu {
+    margin: 0 0 .25em 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.subscribe {
+	display: flex;
+}
+
+div.divider {
+	display: flex;
+	border-bottom: 1px solid #ffffff;
+	margin: 0 0 2em;
+}
+
+.image {
+    max-width: 12.5em;
+}
+
+.subheading--artist {
+	text-transform: uppercase;
+}
+
+div.carousel {
+    display: flex;
+	flex-wrap: wrap;
+}
+
+div.grid {
+	display: flex;
+	flex-wrap: wrap;
+	column-gap: 8px;
+	row-gap: 12px;
 }
